@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>RP Sasta Horoscope</title>
+     
+    <style>
+    h1 {
+        color: green;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+	
+    <script>
+    $.get("https://ipinfo.io", function(response){generate(response.ip);}, "json")
+	function generate(str){
+		const messg=[
+		"You will act strange today",
+		"Today is the best day to get high",
+		"You require liver medicine after this week",
+		"Your results are too hard to calculate",
+		"You need someone to spice it up",
+		"Congrats! This is the happiest day of your life",
+		"It is a secret, I shall tell you all about it when I see you again",
+		"You shall be responsible for your decisions",
+		"Looks like you forgot your package at home",
+		"You are so hot, you make a dragon want to retire!"];
+		
+		const generator = new Math.seedrandom(str);
+		const randomNumber = generator();
+		document.getElementById("msg").innerHTML = messg[Math.floor(messg.length*randomNumber)];
+	}
+    </script>
+</head>
+ 
+<body>
+    <center>
+        <h1>RP Sasta Horoscope</h1>
+        <h3 id="msg">Calculating your day...</h3>
+    </center>
+</body>
+ 
+</html>
