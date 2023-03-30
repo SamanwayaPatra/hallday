@@ -155,10 +155,22 @@ function horoscopeMe(){
         if(!('ontouchstart' in window)) {
             window.addEventListener('mousemove', mouseMove);
         }
+        window.addEventListener("touchstart", Touchmove);
+        // window.addEventListener('touch', scrollCheck);
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     }
-
+    function Touchmove(event){
+        event.preventDefault(); // we don't want to scroll
+        var touch = event.touches[0];
+        var posx = posy = 0;
+        if (touch.clientX || touch.clientY)    {
+            posx = touch.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+            posy = touch.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+        }
+        target.x = posx;
+        target.y = posy;
+        }
     function mouseMove(e) {
         var posx = posy = 0;
         if (e.pageX || e.pageY) {
