@@ -18,12 +18,7 @@
 		}
 		</style>
     <script>
-		try {
-			$.get("https://ipinfo.io", function(response){generate(response.ip);}, "json")
-		}
-		catch(err) {
-			document.getElementById("msg").innerHTML = err.message;
-		}
+		$.get("https://ipinfo.io", function(response){generate(response.ip);}, "json")
     
 	function generate(str){
 		const messg=[
@@ -50,7 +45,7 @@
   	<canvas id="demo-canvas"></canvas>
   	<div class="main-title">
    		<h1><span class="thin">SP Baba </span>says</h1>
-		   <h3 id="msg">Calculating your day...</h3>
+		   <h3 id="msg">Calculating...<br>If this takes too long, you might be blocking us.</h3>
    			<!-- <form>
   				<input type="text" id="horoscope" placeholder="Type your sign here">
   			</form>
