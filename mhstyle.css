@@ -14,6 +14,7 @@ section {
   position: relative;
   width: 100%;
   height: 100%;
+  scroll-snap-type: y proximity;
 }
 section::after {
   position: relative;
