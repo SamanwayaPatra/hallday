@@ -18,7 +18,13 @@
 		}
 		</style>
     <script>
-    $.get("https://ipinfo.io", function(response){generate(response.ip);}, "json")
+		try {
+			$.get("https://ipinfo.io", function(response){generate(response.ip);}, "json")
+		}
+		catch(err) {
+			document.getElementById("msg").innerHTML = err.message;
+		}
+    
 	function generate(str){
 		const messg=[
 		"You will act strange today",
