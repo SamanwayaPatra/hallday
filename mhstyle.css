@@ -36,7 +36,7 @@ section h1 {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #fff;
-  font : normal 300 350%/1 'Josefin Sans', sans-serif;
+  font : normal 300 xxx-large/1 'Josefin Sans', sans-serif;
   text-align: center;
   /* white-space: nowrap; */
 }
@@ -51,7 +51,7 @@ section h4 {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #fff;
-  font : normal 300 200%/1 'Josefin Sans', sans-serif;
+  font : normal 300 xx-large/1 'Josefin Sans', sans-serif;
   text-align: center;
   white-space: nowrap;
 }
