@@ -156,6 +156,7 @@ function horoscopeMe(){
             window.addEventListener('mousemove', mouseMove);
         }
         window.addEventListener("touchstart", Touchmove);
+        window.addEventListener("touchmove", Touchmove);
         // window.addEventListener('touch', scrollCheck);
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
