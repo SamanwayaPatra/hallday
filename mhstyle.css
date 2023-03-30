@@ -42,9 +42,9 @@ section h1 {
 }
 
 section h4 {
-  position: relative;
+  position: absolute;
   /* padding-top: 10%; */
-  top: 20%;
+  top: 15%;
   text-shadow: 2px 2px 4px #000000;
   left: 50%;
   z-index: 2;
@@ -105,7 +105,7 @@ section h4 {
 .demo a {
   position: absolute;
   bottom: 20px;
-  right: 10%;
+  right: 50%;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
