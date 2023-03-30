@@ -1,6 +1,7 @@
 <head>
 	<title>RP Sasta Horoscope</title>
 	<link rel="stylesheet" href="style.css">
+	<script>window.onerror = function(e){document.getElementById("msg").innerHTML = "Oh No! Looks like we cannot reach you!";}</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
@@ -18,12 +19,7 @@
 		}
 		</style>
     <script>
-		try {
-			$.get("https://ipinfo.io", function(response){generate(response.ip);}, "json")
-		}
-		catch(err) {
-			document.getElementById("msg").innerHTML = err.message;
-		}
+		$.get("https://ipinfo.io", function(response){generate(response.ip);}, "json")
     
 	function generate(str){
 		const messg=[
