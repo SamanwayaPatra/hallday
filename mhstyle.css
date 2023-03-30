@@ -36,13 +36,13 @@ section h1 {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #fff;
-  font : normal 300 xxx-large/1 'Josefin Sans', sans-serif;
+  font : normal 300 650%/1 'Josefin Sans', sans-serif;
   text-align: center;
   /* white-space: nowrap; */
 }
 
 section h4 {
-  position: relative;
+  position: absolute;
   /* padding-top: 10%; */
   top: 20%;
   text-shadow: 2px 2px 4px #000000;
@@ -51,9 +51,9 @@ section h4 {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #fff;
-  font : normal 300 xx-large/1 'Josefin Sans', sans-serif;
+  font : normal 300 400%/1 'Josefin Sans', sans-serif;
   text-align: center;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 
