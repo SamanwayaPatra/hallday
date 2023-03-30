@@ -16,6 +16,9 @@ html, body {
 .demo {
   scroll-snap-align: center;
 }
+.demo2 {
+  scroll-snap-align: center;
+}
 section {
   /* text-shadow: 2px 2px 4px #000000; */
   word-wrap: break-word;
